@@ -1,0 +1,404 @@
+/* LOGIN */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #FAF9F6;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+svg,
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.login-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+}
+.form-container {
+    width: 285px;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+svg {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 1050px;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    pointer-events: none;
+}
+.form-container .form-row {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+.form-container .form-row input {
+    width: 100%;
+    height: 32px;
+    margin: 0;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid #dddddd;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+.form-container .form-row input.valid {
+    border-color: #000000;
+}
+.form-container .form-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: -10px 10px 0 0;
+    /* padding: 0; */
+    border: 2px solid #dddddd;
+}
+.form-container .form-row input[type="submit"] {
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ffffff;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    z-index: 5;
+    position: relative;
+}  
+.form-container .form-row input[type="submit"] {
+    color: #ffffff;
+}
+
+/* LOGIN RESPONSIVE */
+@media (max-width: 391px) {
+.container {
+    margin-top: -10%;
+    padding-bottom: 20px;
+}
+.form-container {
+    width: 120px;
+    top: 49.5%;
+}
+.form-container .form-row {
+    height: 40px;
+    margin-bottom: 2px;
+}
+.form-container .form-row input:not([type="checkbox"]) {
+    height: 15px;
+    font-size: 12px;
+    padding: 2px 8px;
+}
+.form-container .form-row input[type="submit"] {
+    height: 25px;
+    font-size: 11px;
+    margin-top: 5%;
+}
+.form-container .form-row:nth-child(3) {
+    font-size: 5px;
+    line-height: -1;
+}
+svg {
+    width: 120% !important;
+    max-width: none;
+}
+}
+
+/* LOGOUT */
+.logout-form {
+    display: inline-block;
+}
+
+.btn-logout {
+    color: rgba(57, 37, 75, 0.8) !important;
+    padding: 4px 8px !important;
+    border-radius: 50px; 
+    border: 1.5px solid transparent; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block !important; 
+    width: auto !important; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-logout:hover {
+     color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.15); 
+    border-color: rgba(255, 255, 255, 0.6) !important; 
+    transform: translateY(-2px);
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #dddddd;
+}
+
+.form-container label,
+.form-container input,
+.form-container input::placeholder {
+    font-size: 15px;
+    font-family: inherit;
+}
+
+svg {
+    stroke-width: 1.2px;
+    stroke: #000000;
+    fill: none
+}
+
+/* TEXT UTAMA DI DASBOARD UMUM */
+h1, .display-4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* EFEK BORDER MENU NAVBAR */
+.nav-link-custom {
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 5px 10px !important;
+    border-radius: 50px; 
+    border: 1.5px solid transparent; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block !important; 
+    width: auto !important; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+}
+
+.nav-link-custom:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.15); 
+    border-color: rgba(255, 255, 255, 0.6) !important; 
+    transform: translateY(-2px);
+}
+
+.nav-link-custom.active {
+    border-color: #d8b4fe !important; 
+    color: #ffffff !important;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(172, 115, 230, 0.7); 
+}
+
+/* RESPONSIVE NENU NAVBAR */
+@media (max-width: 768px) {
+    .nav-item {
+        margin-bottom: 8px; 
+    }
+}
+
+/* TABEL DATA DI DASHBOARD ADMIN */
+.custom-card-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0 !important;
+    background: transparent !important;
+}
+
+.table-custom thead {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.table-custom th, .table-custom td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.table-custom > :not(caption) > * > * {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.table-custom tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transition: 0.3s;
+}
+
+/* TABLE DASHBOARD ADMIN RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .table-custom thead {
+        display: none; 
+    }
+
+    .table-custom, .table-custom tbody, .table-custom tr, .table-custom td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-custom tr {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+        padding: 10px 0;
+    }
+
+    .table-custom td {
+        text-align: right;
+        padding-left: 50% !important;
+        position: relative;
+        padding: 12px 15px !important;
+    }
+
+    .table-custom td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: bold;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .table-custom td[data-label="Action"] {
+        text-align: center;
+        padding-left: 15px !important;
+    }
+}
+
+/* DETAIL SKILLS */
+.modal-custom {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content-custom {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border: 1px solid rgba(216, 180, 254, 0.3);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    animation: modalSlideUp 0.4s ease;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes modalSlideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ANIMASI GALLERY */
+.carousel img {
+    /* width: 300px; */
+    border-radius: 8px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent 40%, rgba(0,0,0,0.4));
+    transition: all 0.5s ease;
+    filter: brightness(0.5) grayscale(0.5); 
+}
+
+.flipster__item--current img {
+    filter: brightness(1) grayscale(0);
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.carousel-container {
+    padding: 50px 5px;
+    border-radius: 10px;
+    /* background: rgba(66, 54, 54, 0.4); */
+    position: relative;
+    overflow: visible;
+}
+
+/* PROJECT DETAIL OVERLAY */
+.project-info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.project-info-content {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    color: white;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.close-info {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.close-info:hover { opacity: 1; }
+
+.info-header h2 {
+    color: #c084fc; /* Warna ungu khas dashboardmu */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
