@@ -3,7 +3,7 @@ name: Deploy Website to InfinityFree
 on:
   push:
     branches:
-      - master # ganti ke master jika branch utamamu namanya master
+      - master
 
 jobs:
   web-deploy:
@@ -12,12 +12,24 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v3
-    
+
+    # LANGKAH BARU 1: Set up PHP di Environment GitHub Actions
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, xml, ctype, iconv, json, pdo, pdo_mysql
+        coverage: none
+
+    # LANGKAH BARU 2: Jalankan Composer Install agar folder vendor terbentuk otomatis
+    - name: Install Dependencies (Composer)
+      run: composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
+
+    # LANGKAH 3: Sync semua file (termasuk folder vendor yang baru dibuat) ke FTP InfinityFree
     - name: Sync files to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
         server-dir: ./htdocs/
