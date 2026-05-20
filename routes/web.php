@@ -55,5 +55,12 @@ Route::middleware(['admin.auth'])->group(function () {
     Route::post('/admin/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
 });
 
-
+// Rute Darurat untuk Membersihkan Cache di Hosting InfinityFree
+Route::get('/clear-hosting', function() {
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
+    return "🔥 Mantap! Semua cache lama di hosting berhasil dibersihkan!";
+});
 
