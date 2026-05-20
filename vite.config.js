@@ -7,7 +7,7 @@ export default defineConfig({
             input: ['resources/css/app.css', 
                 'resources/js/app.js',
                 'resources/js/about.js',
-                'resources/js/project.js', 
+                // 'resources/js/project.js', 
                 'resources/css/jquery.flipster.min.css', 
                 'resources/js/jquery.flipster.min.js'  
             ],
