@@ -62,6 +62,6 @@
 
 @endsection
 @push('scripts')
-    {{-- Pastikan nama filenya project.js (tanpa s) sesuai lampiranmu --}}
+    {{-- Pastikan nama filenya project.js (dengan s) sesuai lampiranmu --}}
     @vite('resources/js/project.js') 
 @endpush
