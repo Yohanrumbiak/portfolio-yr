@@ -13,7 +13,18 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v3
 
-    # LANGKAH BARU 1: Set up PHP di Environment GitHub Actions
+    # LANGKAH 1: Setup Node.js & Compile Aset Vite (Perbaikan Error Manifest)
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install NPM & Build Assets
+      run: |
+        npm install
+        npm run build
+
+    # LANGKAH 2: Set up PHP Environment
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
@@ -21,11 +32,11 @@ jobs:
         extensions: mbstring, xml, ctype, iconv, json, pdo, pdo_mysql
         coverage: none
 
-    # LANGKAH BARU 2: Jalankan Composer Install agar folder vendor terbentuk otomatis
+    # LANGKAH 3: Jalankan Composer Install
     - name: Install Dependencies (Composer)
       run: composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
 
-    # LANGKAH 3: Sync semua file (termasuk folder vendor yang baru dibuat) ke FTP InfinityFree
+    # LANGKAH 4: Sync semua file ke FTP InfinityFree (Termasuk folder public/build yang baru dibuat)
     - name: Sync files to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
