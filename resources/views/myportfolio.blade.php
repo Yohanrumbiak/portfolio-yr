@@ -6,7 +6,7 @@
 
 <section class="hero container text-center">
     <div>
-        <br>
+        <br><br>
         <h1 class="display-4 fw-bold">Halo, Saya Yohan Rumbiak seorang programmer Web Developer & IT Support</h1>
         <p class="lead">Laravel Developer | Papua Indonesia</p>
     </div>

@@ -258,6 +258,7 @@
     <div class="container">
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
+                <br>
                 <div class="footer-logo mb-3">Dashboard Portfolio</div>
                 <p class="text-white-50">Sedang membangun masa depan melalui kode dan desain. Fokus pada pengembangan Sistem Informasi dan Network Engineering.</p>
                 <div class="mt-4">
