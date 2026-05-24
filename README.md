@@ -1,7 +1,7 @@
 
 Hallo nama saya Yohan Rumbiak saya adalah seorang web developer sekaligus IT Support dari Papua Indonesia, selamat datang di project portofolio laravel saya👐
 
-saya membangun project portofolio ini mengunakan framework laravel v10, mengunakan dan database MySQL.
+saya membangun project portofolio ini mengunakan framework laravel v10, dan mengunakan database MySQL.
 
 untuk menjalankan project ini, kalian perlu menginstal:
 1. PHP
