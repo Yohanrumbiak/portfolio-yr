@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 
 </head>
 
@@ -208,6 +207,8 @@
     </div>
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="script.js"></script>
+
+    @vite(['resources/js/app.js'], ['resources/js/login.js'])
 </body>
 
 </html>
