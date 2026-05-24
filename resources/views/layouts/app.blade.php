@@ -283,7 +283,7 @@
             <div class="col-lg-3 col-md-6">
                 <h5 class="fw-bold mb-3">Contact Info</h5>
                 <ul class="list-unstyled text-white-50">
-                    <li class="mb-2"><i class="fas fa-envelope me-2"></i> yohan@email.com</li>
+                    <li class="mb-2"><i class="fas fa-envelope me-2"></i>developerrmbkjunior@gmail.com</li>
                     <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Papua Indonesia</li>
                 </ul>
             </div>
