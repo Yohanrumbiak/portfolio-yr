@@ -206,9 +206,11 @@
         </svg>
     </div>
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 
-    @vite(['resources/js/app.js'], ['resources/js/login.js'])
+    @vite(['resources/js/app.js',
+    'resources/js/login.js'
+    ])
 </body>
 
 </html>
