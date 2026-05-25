@@ -11,6 +11,7 @@
         Saya adalah developer yang fokus membangun aplikasi web menggunakan Laravel
         dengan struktur yang rapi dan profesional. Saya juga memiliki beberapa skil terkait dunia  Teknologi Informasi (IT), seperti Jaringan Komputer, Pemrograman web, Database, Devops, dan Perangkat Fisik Komputer (Hardware). Saya selalu berusaha untuk terus belajar dan mengembangkan diri dalam bidang IT, sehingga saya dapat memberikan solusi terbaik untuk setiap proyek yang saya kerjakan.
     </p>
+    <br><br>
     <h2 class="mb-5 text-center">Skills</h2>
         <div class="row justify-content-center text-center">
             <div class="col-md-3 col-6 mb-4">
