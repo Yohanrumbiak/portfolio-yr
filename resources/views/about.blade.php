@@ -23,46 +23,94 @@
                         data-detail="Saya telah menguasai Laravel selama lebih dari 1 tahun, dengan pengalaman membangun berbagai aplikasi web yang kompleks dan efisien.">
                             <span>90%</span>
                         </div>
-                        <h5 class="mt-3">Laravel</h5>
+                        <h5 class="mt-3">Framework Laravel</h5>
                     </div>
                     
             
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="skill-circle" style="--percentage: 80;"
-                    data-skill="PHP" 
-                    data-start="2022" 
-                    data-end="Sekarang" 
-                    data-logo="{{ asset('images/php.png')}}" 
-                    data-detail="Mengembangkan logika server-side yang kuat.">
-                        <span>80%</span>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 80;"
+                        data-skill="PHP" 
+                        data-start="2022" 
+                        data-end="Sekarang" 
+                        data-logo="{{ asset('images/PHP-logo.svg-removebg-preview.png') }}" 
+                        data-detail="Familiar dalam mengembangkan logika server-side yang kuat mengunakan bahasa pemrograman PHP.">
+                            <span>80%</span>
+                        </div>
+                        <h5 class="mt-3">PHP</h5>
                     </div>
-                    <h5 class="mt-3">PHP</h5>
-                </div>
+            
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 80;"
+                        data-skill="HTML" 
+                        data-start="2022" 
+                        data-end="Sekarang" 
+                        data-logo="{{ asset('images/logo_html-removebg-preview.png') }}" 
+                        data-detail="Familiar dalam menggunakan HTML untuk membuat struktur dasar halaman web yang responsif dan semantik.">
+                            <span>95%</span>
+                        </div>
+                        <h5 class="mt-3">HTML</h5>
+                    </div>
+            
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 80;"
+                        data-skill="CSS" 
+                        data-start="2022" 
+                        data-end="Sekarang" 
+                        data-logo="{{ asset('images/logo_css-removebg-preview.png') }}" 
+                        data-detail="Familiar dalam menggunakan CSS untuk membuat tampilan halaman web yang menarik dan responsif.">
+                            <span>85%</span>
+                        </div>
+                        <h5 class="mt-3">CSS</h5>
+                    </div>
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 80;"
+                        data-skill="JavaScript" 
+                        data-start="2022" 
+                        data-end="Sekarang" 
+                        data-logo="{{ asset('images/logo_javascript-removebg-preview.png') }}" 
+                        data-detail="Familiar dalam menggunakan JavaScript untuk membuat interaksi, fitur dan fungsionalitas di halaman web.">
+                            <span>75%</span>
+                        </div>
+                        <h5 class="mt-3">JavaScript</h5>
+                    </div>
                 
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="skill-circle" style="--percentage: 75;"
-                    data-skill="MySQL"
-                    data-start="2023"
-                    data-end="Sekarang"
-                    data-logo="{{ asset('images/mysql.png') }}"
-                    data-detail="Familiar dalam mengunakan database MySQL">
-                        <span>75%</span>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 75;"
+                        data-skill="MySQL"
+                        data-start="2023"
+                        data-end="Sekarang"
+                        data-logo="{{ asset('images/logo_Mysql-removebg-preview.png') }}"
+                        data-detail="Familiar dalam mengunakan database MySQL">
+                            <span>78%</span>
+                        </div>
+                        <h5 class="mt-3">MySQL</h5>
                     </div>
-                    <h5 class="mt-3">MySQL</h5>
-                </div>
                 
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="skill-circle" style="--percentage: 65;"
-                    data-skill="Networking Basic"
-                    data-start="2021"
-                    data-end="Sekarang"
-                    data-logo="{{ asset('images/networking.png') }}"
-                    data-detail="Memahami dasar-dasar jaringan komputer">
-                        <span>65%</span>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 65;"
+                        data-skill="Networking Basic"
+                        data-start="2021"
+                        data-end="Sekarang"
+                        data-logo="{{ asset('images/networking.png') }}"
+                        data-detail="Memahami dasar-dasar jaringan komputer">
+                            <span>70%</span>
+                        </div>
+                        <h5 class="mt-3">Networking Basic</h5>
                     </div>
-                    <h5 class="mt-3">Networking Basic</h5>
-                </div>
-            </div>
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 65;"
+                        data-skill="Web Server Laragon"
+                        data-start="2026"
+                        data-end="Sekarang"
+                        data-logo="{{ asset('images/networking.png') }}"
+                        data-detail="Familiar dalam menggunakan web server Laragon untuk pengembangan aplikasi web secara lokal.">
+                            <span>60%</span>
+                        </div>
+                        <h5 class="mt-3">Web Server Laragon</h5>
+                    </div>
+                 </div>
         </section>
     
     <!-- ------------------------------ -->
@@ -70,7 +118,7 @@
         <div class="modal-content-custom">
             <span class="close-modal">&times;</span>
             <div class="text-center">
-                <img id="modal-logo" src="" alt="Logo" style="width: 80px; margin-bottom: 20px;">
+                <img id="modal-logo" src="" alt="Logo" style="width: 200px; margin-bottom: 20px;">
                 <h2 id="modal-title" style="color: #d8b4fe;"></h2>
                 <p class="badge bg-primary"><span id="modal-start"></span> - <span id="modal-end"></span></p>
                 <hr style="border-color: rgba(255,255,255,0.1)">
