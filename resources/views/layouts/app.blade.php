@@ -273,10 +273,10 @@
             <div class="col-lg-2 col-md-6">
                 <h5 class="fw-bold mb-3">Navigation</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="/" class="footer-link">Home</a></li>
-                    <li class="mb-2"><a href="/about" class="footer-link">About Me</a></li>
-                    <li class="mb-2"><a href="/projects" class="footer-link">Projects</a></li>
-                    <li class="mb-2"><a href="/contact" class="footer-link">Contact</a></li>
+                    <li class="mb-2"><a href="{{ url('/') }}" class="footer-link">Home</a></li>
+                    <li class="mb-2"><a href="{{ url('/about') }}" class="footer-link">About Me</a></li>
+                    <li class="mb-2"><a href="{{ url('/projects') }}" class="footer-link">Projects</a></li>
+                    <li class="mb-2"><a href="{{ url('/contact') }}" class="footer-link">Contact</a></li>
                 </ul>
             </div>
 

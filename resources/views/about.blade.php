@@ -5,57 +5,65 @@
 @section('content')
 
  <!-- SKILLS -->
-<section class="section container text-center">
-    <h2 class="mb-4">About Me</h2>
-    <p>
-        Saya adalah developer yang fokus membangun aplikasi web menggunakan Laravel
-        dengan struktur yang rapi dan profesional. Saya juga memiliki beberapa skil terkait dunia  Teknologi Informasi (IT), seperti Jaringan Komputer, Pemrograman web, Database, Devops, dan Perangkat Fisik Komputer (Hardware). Saya selalu berusaha untuk terus belajar dan mengembangkan diri dalam bidang IT, sehingga saya dapat memberikan solusi terbaik untuk setiap proyek yang saya kerjakan.
-    </p>
-    <br><br>
-    <h2 class="mb-5 text-center">Skills</h2>
-        <div class="row justify-content-center text-center">
-            <div class="col-md-3 col-6 mb-4">
-                <div class="skill-circle" style="--percentage: 90;"
-                data-skill="Laravel"
-                data-start="januari 2023"
-                data-end="sekarang" 
-                data-logo="{{ asset('images/laravel.png') }}"
-                data-detail="Saya telah menguasai Laravel selama lebih dari 1 tahun, dengan pengalaman membangun berbagai aplikasi web yang kompleks dan efisien.">
-                    <span>90%</span>
-                </div>
-                <h5 class="mt-3">Laravel</h5>
-            </div>
+        <section class="section container text-center">
+            <h2 class="mb-4">About Me</h2>
+            <p>
+                Saya adalah developer yang fokus membangun aplikasi web menggunakan Laravel
+                dengan struktur yang rapi dan profesional. Saya juga memiliki beberapa skil terkait dunia  Teknologi Informasi (IT), seperti Jaringan Komputer, Pemrograman web, Database, Devops, dan Perangkat Fisik Komputer (Hardware). Saya selalu berusaha untuk terus belajar dan mengembangkan diri dalam bidang IT, sehingga saya dapat memberikan solusi terbaik untuk setiap proyek yang saya kerjakan.
+            </p>
+            <br><br>
+            <h2 class="mb-5 text-center">Skills</h2>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="skill-circle" style="--percentage: 90;"
+                        data-skill="Laravel"
+                        data-start="januari 2023"
+                        data-end="sekarang" 
+                        data-logo="{{ asset('images/logo_laravel-removebg-preview.png') }}"
+                        data-detail="Saya telah menguasai Laravel selama lebih dari 1 tahun, dengan pengalaman membangun berbagai aplikasi web yang kompleks dan efisien.">
+                            <span>90%</span>
+                        </div>
+                        <h5 class="mt-3">Laravel</h5>
+                    </div>
+                    
             
-            
-            <div class="col-md-3 col-6 mb-4">
-                <div class="skill-circle" style="--percentage: 80;"
-                 data-skill="PHP" 
-                 data-start="2022" 
-                 data-end="Sekarang" 
-                 data-logo="{{ asset('images/php.png')}}" 
-                 data-detail="Mengembangkan logika server-side yang kuat.">
-                    <span>80%</span>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-circle" style="--percentage: 80;"
+                    data-skill="PHP" 
+                    data-start="2022" 
+                    data-end="Sekarang" 
+                    data-logo="{{ asset('images/php.png')}}" 
+                    data-detail="Mengembangkan logika server-side yang kuat.">
+                        <span>80%</span>
+                    </div>
+                    <h5 class="mt-3">PHP</h5>
                 </div>
-                <h5 class="mt-3">PHP</h5>
-            </div>
-            
-            <div class="col-md-3 col-6 mb-4">
-                <div class="skill-circle" style="--percentage: 75;"
-                data-skill="MySQL">
-                    <span>75%</span>
+                
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-circle" style="--percentage: 75;"
+                    data-skill="MySQL"
+                    data-start="2023"
+                    data-end="Sekarang"
+                    data-logo="{{ asset('images/mysql.png') }}"
+                    data-detail="Familiar dalam mengunakan database MySQL">
+                        <span>75%</span>
+                    </div>
+                    <h5 class="mt-3">MySQL</h5>
                 </div>
-                <h5 class="mt-3">MySQL</h5>
-            </div>
-            
-            <div class="col-md-3 col-6 mb-4">
-                <div class="skill-circle" style="--percentage: 65;"
-                data-skill="Networking Basic">
-                    <span>65%</span>
+                
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="skill-circle" style="--percentage: 65;"
+                    data-skill="Networking Basic"
+                    data-start="2021"
+                    data-end="Sekarang"
+                    data-logo="{{ asset('images/networking.png') }}"
+                    data-detail="Memahami dasar-dasar jaringan komputer">
+                        <span>65%</span>
+                    </div>
+                    <h5 class="mt-3">Networking Basic</h5>
                 </div>
-                <h5 class="mt-3">Networking Basic</h5>
             </div>
-        </div>
-    </section>
+        </section>
     
     <!-- ------------------------------ -->
      <div id="skill-modal" class="modal-custom d-none">
