@@ -1,3 +1,19 @@
+
+Hallo nama saya Yohan Rumbiak saya adalah seorang web developer sekaligus IT Support dari Papua Indonesia, selamat datang di project portofolio laravel saya👐
+
+saya membangun project portofolio ini mengunakan framework laravel v10, dan mengunakan database MySQL.
+
+untuk menjalankan project ini, kalian perlu menginstal:
+1. PHP
+2. Composer  
+3. Node.js
+
+sebagai tambahan kalian perlu menginstal 
+4. Git (opsional) sebagai version control system nya.
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
