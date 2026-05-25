@@ -8,6 +8,7 @@
     <div>
         <br><br>
         <h1 class="display-4 fw-bold">Halo, Saya Yohan Rumbiak seorang programmer Web Developer & IT Support</h1>
+        <br>
         <p class="lead">Laravel Developer | Papua Indonesia</p>
     </div>
 
