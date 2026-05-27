@@ -11,15 +11,19 @@
                 Saya adalah developer yang fokus membangun aplikasi web menggunakan Laravel
                 dengan struktur yang rapi dan profesional. Saya juga memiliki beberapa skil terkait dunia  Teknologi Informasi (IT), seperti Jaringan Komputer, Pemrograman web, Database, Devops, dan Perangkat Fisik Komputer (Hardware). Saya selalu berusaha untuk terus belajar dan mengembangkan diri dalam bidang IT, sehingga saya dapat memberikan solusi terbaik untuk setiap proyek yang saya kerjakan.
             </p>
-            <br><br>
+            <p>Klik pada setiap diagram lingkaran 
+                di bawah ini untuk melihat keteragan dan detail mendalam dari masing-masing keahlian teknis
+                 yang saya miliki dalam pengembangan sistem informasi dan rekayasa jaringan. 👇
+            </p>
             <h2 class="mb-5 text-center">Skills</h2>
+            <br>
                 <div class="row justify-content-center text-center">
                     <div class="col-md-3 col-6 mb-4">
                         <div class="skill-circle" style="--percentage: 90;"
                         data-skill="Laravel"
                         data-start="januari 2023"
                         data-end="sekarang" 
-                        data-logo="{{ asset('images/logo_laravel-removebg-preview.png') }}"
+                        data-logo="{{ asset('images/Laravel-logo-removebg-preview.png') }}"
                         data-detail="Saya telah menguasai Laravel selama lebih dari 1 tahun, dengan pengalaman membangun berbagai aplikasi web yang kompleks dan efisien.">
                             <span>90%</span>
                         </div>
@@ -93,7 +97,7 @@
                         data-start="2021"
                         data-end="Sekarang"
                         data-logo="{{ asset('images/networking.png') }}"
-                        data-detail="Memahami dasar-dasar jaringan komputer">
+                        data-detail="Memahami dasar-dasar jaringan komputer sampai dengan jaringan tingkat lanjut, termasuk konfigurasi, VLAN, troubleshooting, dan keamanan jaringan.">
                             <span>70%</span>
                         </div>
                         <h5 class="mt-3">Networking Basic</h5>
@@ -104,7 +108,7 @@
                         data-skill="Web Server Laragon"
                         data-start="2026"
                         data-end="Sekarang"
-                        data-logo="{{ asset('images/networking.png') }}"
+                        data-logo="{{ asset('images/laragon-logo.png') }}"
                         data-detail="Familiar dalam menggunakan web server Laragon untuk pengembangan aplikasi web secara lokal.">
                             <span>60%</span>
                         </div>

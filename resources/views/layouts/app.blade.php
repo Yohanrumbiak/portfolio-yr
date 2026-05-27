@@ -15,7 +15,6 @@
     ])
     @endif
 
-    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +25,7 @@
                         linear-gradient(135deg,#2e1065,#4c1d95);
             color: white;
             scroll-behavior: smooth;
-            padding-top: 70px;
+            padding-top: 77px; 
             min-height: 100vh;
         }
         .hero {
@@ -85,10 +84,90 @@
             box-shadow: 0 5px 20px rgba(168, 85, 247, 0.6);
         }
 
-        /* Navbar glass */
+        /* ===== NAVBAR GLASS EFFECT (Transparan Murni) ===== */
         .navbar {
             background: rgba(15, 23, 42, 0.6) !important;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            height: 77px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ===== BUTTON HAMBURGER KEREN ===== */
+        .hamburger-btn {
+            background: rgba(105, 104, 104, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .hamburger-btn:hover {
+            background: rgba(124, 58, 237, 0.3);
+            border-color: rgba(124, 58, 237, 0.5);
+            transform: scale(1.05);
+        }
+        .hamburger-btn:focus {
+            box-shadow: none;
+            outline: none;
+        }
+        .hamburger-btn i {
+            font-size: 16px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hamburger-btn:not(.collapsed) i {
+            transform: rotate(90deg);
+            color: #c084fc;
+        }
+
+        /* ===== CUSTOM MOBILE DROPDOWN STYLES ===== */
+        @media (max-width: 991.98px) {
+            .navbar {
+                height: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            
+            /* Membuat container fluid menggunakan flex-wrap agar baris menu bisa turun ke bawah */
+            .navbar-container-custom {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            /* Mengatur menu dropdown agar melebar penuh di bawah brand & tanpa border/background */
+            .navbar-collapse {
+                background: transparent !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin-top: 10px;
+                width: 100%;
+                flex-basis: 100%; /* Memaksa elemen collapse membuat baris baru di bawah */
+            }
+
+            /* Menjajarkan link menu secara vertikal lurus ke kiri (di bawah logo) */
+            .navbar-nav {
+                align-items: flex-start !important;
+                text-align: left !important;
+                padding-left: 5px;
+            }
+
+            .navbar-nav .nav-item {
+                width: 100%;
+                padding: 6px 0 !important;
+            }
         }
 
         /* CIRCULAR SKILL DESIGN */
@@ -130,8 +209,8 @@
             box-shadow: 0 0 40px rgba(168, 85, 247, 0.9);
         }
         .form-control::placeholder {
-        color: #c7aee2ff !important;
-        opacity: 1 !important;
+            color: #c7aee2ff !important;
+            opacity: 1 !important;
         }
         .form-control:focus::placeholder {
             color: #c084fc !important;
@@ -144,15 +223,11 @@
             -webkit-backdrop-filter: blur(12px);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding: 30px 0 15px;
-            /* padding: 20px 0; */
             width: 100%;
-            /* margin-top: 80px; */
             margin-top: auto;
             position: relative;
             overflow: hidden;
         }
-        /* TARGET UTAMA: Menghapus arsiran ungu (margin) yang kamu lihat di inspect */
-        /* Reset semua margin bawah elemen terakhir agar tidak mendorong footer */
         footer .container > .row:last-child,
         footer .container > .row:last-child .col-md-12,
         footer .container > .row:last-child p {
@@ -168,19 +243,16 @@
             margin-bottom: 15px !important;
             line-height: 1.2;
         }
-
         .footer-link {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: 0.3s;
             font-size: 0.95rem;
         }
-
         .footer-link:hover {
             color: #c084fc;
             padding-left: 5px;
         }
-
         .social-icon {
             width: 38px;
             height: 38px;
@@ -194,28 +266,24 @@
             transition: 0.3s;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         .social-icon:hover {
             background: #7c3aed;
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
         }
-        /* Mengatur HR agar tidak terlalu lebar jaraknya */
         footer hr {
             margin-top: 30px !important;
             margin-bottom: 20px !important;
             opacity: 0.1;
         }
-
-        /* Pastikan input group tidak menambah tinggi footer secara liar */
         footer .input-group {
             margin-bottom: 0 !important;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-        <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container-fluid navbar-container-custom px-4">
              <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
                 <img src="{{ asset('images/WhatsApp Image 2025-08-24 at 11.31.55.jpeg') }}" 
                     alt="Logo" 
@@ -225,14 +293,14 @@
                 My Portfolio
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="hamburger-btn collapsed navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center d-flex flex-column align-items-center flex-md-row pt-3 pt-md-0">
+                <ul class="navbar-nav ms-auto text-center d-flex flex-column align-items-center flex-lg-row pt-3 pt-lg-0">
                     <li class="nav-item px-lg-2">
-                        <a class="nav-link nav-link-custom {{ Request::is('myportfolio*') ? 'active' : '' }}" href="/">Home</a>
+                        <a class="nav-link nav-link-custom {{ Request::is('myportfolio*') || Request::is('/') ? 'active' : '' }}" href="/">Home</a>
                     </li>
                     <li class="nav-item px-lg-2">
                         <a class="nav-link nav-link-custom {{ Request::is('about*') ? 'active' : '' }}" href="/about">About Me</a>
@@ -248,7 +316,9 @@
             
         </div>
     </nav>
+
     @yield('content')
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
@@ -262,11 +332,11 @@
                 <div class="footer-logo mb-3">Dashboard Portfolio</div>
                 <p class="text-white-50">Sedang membangun masa depan melalui kode dan desain. Fokus pada pengembangan Sistem Informasi dan Network Engineering.</p>
                 <div class="mt-4">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Yohanrumbiak" class="social-icon"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/yohanrumbiak_?igsh=ZGN6dm5nemp0Ynlm" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61584108977927" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/6281230911816" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
